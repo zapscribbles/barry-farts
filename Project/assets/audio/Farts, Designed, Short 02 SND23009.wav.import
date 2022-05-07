@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Farts, Designed, Short 02 SND23009.wav-f4cef39d1beceaa186a03abaf534e0f0.sample"
+
+[deps]
+
+source_file="res://assets/audio/Farts, Designed, Short 02 SND23009.wav"
+dest_files=[ "res://.import/Farts, Designed, Short 02 SND23009.wav-f4cef39d1beceaa186a03abaf534e0f0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

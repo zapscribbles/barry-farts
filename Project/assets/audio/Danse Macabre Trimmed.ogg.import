@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Danse Macabre Trimmed.ogg-52d5680a8f7faebf65d0655a405dc822.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/Danse Macabre Trimmed.ogg"
+dest_files=[ "res://.import/Danse Macabre Trimmed.ogg-52d5680a8f7faebf65d0655a405dc822.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

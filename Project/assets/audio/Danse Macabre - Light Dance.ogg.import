@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Danse Macabre - Light Dance.ogg-8c931b9b40e2bb7398d3e7e8e36855a8.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/Danse Macabre - Light Dance.ogg"
+dest_files=[ "res://.import/Danse Macabre - Light Dance.ogg-8c931b9b40e2bb7398d3e7e8e36855a8.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,174 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://menu_theme.tres" type="Theme" id=1]
+[ext_resource path="res://assets/fonts/CLOUDY FONT.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/sprites/bg/bg_clouds.png" type="Texture" id=3]
+[ext_resource path="res://scripts/MainMenuBackground.gd" type="Script" id=4]
+[ext_resource path="res://assets/sprites/bg/bg_cityscape.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/bg/bg_buildings.png" type="Texture" id=6]
+[ext_resource path="res://scripts/MainMenu.gd" type="Script" id=7]
+[ext_resource path="res://assets/sprites/bg/bg_trees.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/bg/bg_road.png" type="Texture" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 150
+outline_size = 10
+outline_color = Color( 0.631373, 0.356863, 0.0588235, 0.694118 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "fade_out"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 7 )
+
+[node name="VSplitContainer" type="VSplitContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+split_offset = 188
+
+[node name="Title" type="CenterContainer" parent="VSplitContainer"]
+margin_right = 1024.0
+margin_bottom = 345.0
+
+[node name="Label" type="Label" parent="VSplitContainer/Title"]
+margin_left = 52.0
+margin_top = 94.0
+margin_right = 972.0
+margin_bottom = 251.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.164706, 0.101961, 0.0117647, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Barry Farts"
+
+[node name="Buttons" type="CenterContainer" parent="VSplitContainer"]
+margin_top = 357.0
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="GridContainer" type="GridContainer" parent="VSplitContainer/Buttons"]
+margin_left = 348.0
+margin_top = 91.0
+margin_right = 676.0
+margin_bottom = 152.0
+
+[node name="ButtonStartGame" type="Button" parent="VSplitContainer/Buttons/GridContainer"]
+margin_right = 328.0
+margin_bottom = 61.0
+theme = ExtResource( 1 )
+text = "Start Game"
+
+[node name="MainMenuBackground" type="ParallaxBackground" parent="."]
+script = ExtResource( 4 )
+camera_velocity = Vector2( -10, 0 )
+
+[node name="Clouds" type="ParallaxLayer" parent="MainMenuBackground"]
+motion_scale = Vector2( 0.2, 1 )
+motion_mirroring = Vector2( 1112, 0 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Sprite" type="Sprite" parent="MainMenuBackground/Clouds"]
+modulate = Color( 0.698039, 0.698039, 0.698039, 1 )
+position = Vector2( 547, 308 )
+scale = Vector2( 0.579167, 0.584259 )
+texture = ExtResource( 3 )
+
+[node name="Cityscape" type="ParallaxLayer" parent="MainMenuBackground"]
+motion_scale = Vector2( 0.8, 0.8 )
+motion_mirroring = Vector2( 1112, 0 )
+
+[node name="Sprite" type="Sprite" parent="MainMenuBackground/Cityscape"]
+modulate = Color( 0.580392, 0.580392, 0.580392, 1 )
+position = Vector2( 547, 308 )
+scale = Vector2( 0.579167, 0.584259 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Trees" type="ParallaxLayer" parent="MainMenuBackground"]
+motion_scale = Vector2( 1.2, 1.6 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="Sprite" type="Sprite" parent="MainMenuBackground/Trees"]
+modulate = Color( 0.572549, 0.572549, 0.572549, 1 )
+position = Vector2( 503, 355 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 8 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Road" type="ParallaxLayer" parent="MainMenuBackground"]
+motion_scale = Vector2( 2, 2 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="Sprite" type="Sprite" parent="MainMenuBackground/Road"]
+modulate = Color( 0.572549, 0.572549, 0.572549, 1 )
+position = Vector2( 512.5, 355 )
+scale = Vector2( 0.543229, 0.5 )
+texture = ExtResource( 9 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Buildings" type="ParallaxLayer" parent="MainMenuBackground"]
+motion_scale = Vector2( 2, 2 )
+motion_mirroring = Vector2( 3840, 0 )
+
+[node name="Sprite" type="Sprite" parent="MainMenuBackground/Buildings"]
+modulate = Color( 0.572549, 0.572549, 0.572549, 1 )
+position = Vector2( 1910, 355 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 6 )
+
+[node name="Fade" type="ColorRect" parent="."]
+modulate = Color( 0, 0, 0, 0 )
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Fade")
+anims/fade_out = SubResource( 2 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[connection signal="pressed" from="VSplitContainer/Buttons/GridContainer/ButtonStartGame" to="." method="_on_ButtonStartGame_pressed"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

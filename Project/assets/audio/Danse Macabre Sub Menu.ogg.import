@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Danse Macabre Sub Menu.ogg-f018ed83f317e099da1c86e2f5898bf7.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/Danse Macabre Sub Menu.ogg"
+dest_files=[ "res://.import/Danse Macabre Sub Menu.ogg-f018ed83f317e099da1c86e2f5898bf7.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
