@@ -16,26 +16,38 @@ func _physics_process(delta):
 	if linear_velocity.x < 0:
 		$AnimatedSprite.flip_h = true
 	
-#	If moving right, face right (sprite isn't flipped as it faces right by default)
-	if linear_velocity.x > 0:
+#	If moving right or not actively moving, face right (sprite isn't flipped as it faces right by default)
+	if linear_velocity.x >= 0:
 		$AnimatedSprite.flip_h = false
 
-func start_jump():
+func jump():
 	add_central_force(Vector2(0, -800))
+	$AnimatedSprite.play("farting")
+	print(to_global($Bum.position))
 
 func end_jump():
 	applied_force.y = 0
+	$AnimatedSprite.play("standing")
 
-func start_move_forward():
+func move_forward():
 	add_central_force(Vector2(500, 0))
 
 func end_move_forward():
-	applied_force.x = 0
-	linear_velocity.x = 0
+	end_horizontal_movement()
 
-func start_move_backward():
+func move_backward():
 	add_central_force(Vector2(-500, 0))
 
 func end_move_backward():
+	end_horizontal_movement()
+
+func end_horizontal_movement():
 	applied_force.x = 0
 	linear_velocity.x = 0
+
+func _on_Player_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
+	if body.shape_owner_get_owner(body_shape_index).name == "Floor":
+		$AnimatedSprite.play("walking")
+
+func get_bum_pos():
+	return to_global($Bum.position)

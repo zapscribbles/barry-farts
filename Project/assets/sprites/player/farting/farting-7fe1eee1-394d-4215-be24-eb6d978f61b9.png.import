@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/farting-7fe1eee1-394d-4215-be24-eb6d978f61b9.png-a95f3192cfe6fda8d9eaf7af2a56a866.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/sprites/player/farting/farting-7fe1eee1-394d-4215-be24-eb6d978f61b9.png"
+dest_files=[ "res://.import/farting-7fe1eee1-394d-4215-be24-eb6d978f61b9.png-a95f3192cfe6fda8d9eaf7af2a56a866.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

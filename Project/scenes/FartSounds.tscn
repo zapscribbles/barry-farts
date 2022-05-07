@@ -1,0 +1,44 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/audio/fart7.wav" type="AudioStream" id=1]
+[ext_resource path="res://assets/audio/fart2.wav" type="AudioStream" id=2]
+[ext_resource path="res://assets/audio/fart3.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/audio/fart4.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/audio/fart1.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/audio/fart5.wav" type="AudioStream" id=6]
+[ext_resource path="res://assets/audio/fart9.wav" type="AudioStream" id=7]
+[ext_resource path="res://assets/audio/fart10.wav" type="AudioStream" id=8]
+[ext_resource path="res://assets/audio/fart8.wav" type="AudioStream" id=9]
+[ext_resource path="res://assets/audio/fart6.wav" type="AudioStream" id=10]
+
+[node name="FartSounds" type="Node"]
+
+[node name="Fart1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[node name="Fart2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+
+[node name="Fart3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Fart4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="Fart5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="Fart6" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+
+[node name="Fart7" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+
+[node name="Fart8" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+
+[node name="Fart9" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[node name="Fart10" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )

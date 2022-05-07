@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/fart_big.wav-0db1390ac0c1658978ab0148a49dddf8.sample"
+
+[deps]
+
+source_file="res://assets/audio/fart_big.wav"
+dest_files=[ "res://.import/fart_big.wav-0db1390ac0c1658978ab0148a49dddf8.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
