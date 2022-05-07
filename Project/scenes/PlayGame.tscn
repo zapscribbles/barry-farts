@@ -39,7 +39,7 @@ extents = Vector2( 512, 8 )
 extents = Vector2( 512.25, 45 )
 
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 10, 205.25 )
+extents = Vector2( 10, 248.5 )
 
 [sub_resource type="PhysicsMaterial" id=7]
 friction = 0.0
@@ -155,11 +155,11 @@ margin_bottom = 492.0
 split_offset = 100
 
 [node name="TopHUD" type="ColorRect" parent="HUD/TopHalf"]
+visible = false
 margin_right = 1024.0
 margin_bottom = 100.0
 
 [node name="PlayerSpace" type="ReferenceRect" parent="HUD/TopHalf"]
-margin_top = 112.0
 margin_right = 1024.0
 margin_bottom = 492.0
 mouse_filter = 2
@@ -207,11 +207,11 @@ shape = SubResource( 5 )
 shape = SubResource( 3 )
 
 [node name="LeftBoundary" type="CollisionShape2D" parent="PhysicsBoundaries"]
-position = Vector2( -502, -250 )
+position = Vector2( -502, -291.375 )
 shape = SubResource( 6 )
 
 [node name="RightBoundary" type="CollisionShape2D" parent="PhysicsBoundaries"]
-position = Vector2( 502, -250 )
+position = Vector2( 502, -291 )
 shape = SubResource( 6 )
 
 [node name="Player" type="RigidBody2D" parent="."]
@@ -228,7 +228,7 @@ script = ExtResource( 21 )
 scale = Vector2( 0.730769, 0.730769 )
 frames = SubResource( 1 )
 animation = "walking"
-frame = 7
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
