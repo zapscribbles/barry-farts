@@ -11,8 +11,10 @@ Barry is a truck driver with a penchant for flatulence
 ## To play
 
 - Use on-screen arrows and fart button to move left, right and jump
-Or
+
+**Or**
+
 - Use keyboard controls:
-Jump | Space / Up Arrow | W
-Move Forwards | Right Arrow | D
-Move Backwards | Left Arrow | A
+  - Jump: Space / Up Arrow / W
+  - Move Forwards: Right Arrow / D
+  - Move Backwards: Left Arrow / A
